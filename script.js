@@ -1,14 +1,9 @@
 function firstWord(s) {
   // your code here
-	if (!s) {
-    return s;
-  }
-	const trimmed = s.trim();
-	if (!trimmed.includes(" ")) {
-    return trimmed;
-  }
-	const first = s.match(/^\w+/)?.[0];
-	return first;
+	if (!s) return s;
+
+    s = s.trim();
+    return s.split(" ")[0];
 }
 
 // Do not change the code below
